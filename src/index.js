@@ -1,14 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./Components/App";
 import { ApolloProvider } from "react-apollo";
-
-import "./globalStyles";
-import App from "./App";
 import client from "./apollo";
+import "./globalStyles";
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <App /> {""}
+    <App />
   </ApolloProvider>,
   document.getElementById("root")
 );
